@@ -1,10 +1,15 @@
 #include "main.hpp"
 
+/*
+* 백트래킹 방식은 가로, 세로 길이 78을 넘으면 런타임 에러
+* - 정확한 원인을 모름
+*/
+
 int main()
 {
 	srand(time(NULL));
 
-	int width, height, choose;
+	int width, height, choose, is_step;
 	printf("미로 가로 길이(벽 크기 제외): ");
 	scanf_s("%d", &width);
 	printf("미로 세로 길이(벽 크기 제외): ");
@@ -24,18 +29,22 @@ int main()
 
 	printf("미로 생성 알고리즘 선택(1.재귀적 백트래킹, 2.엘러 알고리즘): ");
 	scanf_s("%d", &choose);
+	printf("단계별로 출력하기(1.실행단위 출력, 2.절차단위 출력, 3.생략): ");
+	scanf_s("%d", &is_step);
+	if (is_step < 1 || is_step > 3) is_step = 3;
+
 	switch (choose)
 	{
 	case 1:
-		backtracking(maze, 1, 1); // 시작 위치 (1, 1)
-		print_maze(maze, width, height);
+		backtracking(maze, 1, 1, width, height, is_step); // 시작 위치 (1, 1)
+		print_maze(maze, width, height, 3);
 		break;
 	case 2:
-		eller_algorithm(maze);
-		print_maze(maze, width, height);
+		eller_algorithm(maze, width, height, is_step);
+		print_maze(maze, width, height, 3);
 		break;
 	default:
-
+		printf("해당 선택이 없음.\n");
 		break;
 	}
 
