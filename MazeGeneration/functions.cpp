@@ -25,7 +25,7 @@ void init_maze_with_wall(int** maze, int width, int height)
 /// <param name="matrix">2차원 행렬 포인터</param>
 /// <param name="width">미로 가로 길이(벽 포함)</param>
 /// <param name="height">미로 세로 길이(벽 포함)</param>
-/// /// <param name="is_step">단계별 출력 여부: 기본값 = false(3)</param>
+/// <param name="is_step">단계별 출력 여부: 기본값 = false(3)</param>
 void print_maze(int** maze, int width, int height, int is_step)
 {
 	// 미로 입구 생성: 단계별 출력이 아닐 경우
@@ -196,7 +196,6 @@ void eller_algorithm(int** maze, int width, int height, int is_step = 3)
 
 				if (is_step == 1) print_maze(maze, width, height, is_step);
 			}
-
 		}
 		else
 		{
