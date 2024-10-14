@@ -3,6 +3,6 @@
 2. Eller's Algorithm
 
 > [!NOTE]
-> IDE: Visual Studio  
-> encoding: EUC-KR  
-> line break: CSLF
+> IDE: Visual Studio 2022  
+> Encoding: EUC-KR  
+> 사용 언어: C/C++
