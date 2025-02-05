@@ -4,6 +4,6 @@
 ## 목록
 1. [미로 생성 알고리즘](./MazeGeneration)
 2. [문제 풀이](./Exercise/)
-   - [PCCP](./Exercise/PCCP/)
+   - [Programmers](./Exercise/Programmers/)
    - [SW Expert Academy](./Exercise/SWExpert/)
    - [Baekjoon](./Exercise/Baekjoon/)
