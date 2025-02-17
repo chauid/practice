@@ -8,3 +8,4 @@
 |---|:---:|---|---|
 |PCCP 모의고사 1회|C++|[링크](https://certi.programmers.co.kr/about/sample)|[main.cpp](./모의고사1회/main.cpp), [solution.cpp](./TrialExam1/solution.cpp), [solution.h](./TrialExam1/solution.h)|
 |충돌위험 찾기|C++|[링크](https://school.programmers.co.kr/learn/courses/30/lessons/340211)|[main.cpp](./Sample3/main.cpp), [solution.cpp](./Sample3/solution.cpp), [solution.h](./Sample3/solution.h)|
+|뉴스 클러스터링|C++|[링크](https://school.programmers.co.kr/learn/courses/30/lessons/17677)|[main.cpp](./Lessons17677/main.cpp)|
