@@ -4,7 +4,7 @@ int Solution::solution(vector<vector<int>> points, vector<vector<int>> routes)
 {
 	int robot_size = routes.size();
 	vector<robot> robots(robot_size);
-	
+
 	for (int i = 0; i < robot_size; i++)
 	{
 		robots[i].x = points[routes[i][0] - 1][0]; // x
